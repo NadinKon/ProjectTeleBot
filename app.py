@@ -50,7 +50,7 @@ class BotStates(StatesGroup):
 @dp.message_handler(commands=['start', 'help'])
 async def command_start(message: types.Message):
     name = message.from_user.first_name
-    await bot.send_message(message.from_user.id, f'Привет {name}! Как я могу помочь?', reply_markup=kb_client)
+    await bot.send_message(message.from_user.id, f'Привет {name}! Как дела? Жми на кнопку в меню ↓ ↓ ↓', reply_markup=kb_client)
     await message.delete()
 
 
@@ -138,7 +138,7 @@ async def send_cute_animal(message: types.Message):
 async def create_poll(message: types.Message):
     args = message.get_args()
     if not args:
-        await message.reply("Напишите: /Создать_опрос вопрос;вариант 1;вариант 2;<дополнительные варианты>]")
+        await message.reply("Напишите: /Создать_опрос вопрос;вариант 1; вариант 2;дополнительные варианты")
         return
 
     try:
