@@ -7,15 +7,15 @@
 Установите зависимости, используя команду:
 pip install -r requirements.txt
 
-**Создайте файл .env в корневом каталоге проекта с содержимым:**
-TOKEN=your_telegram_bot_token
-WEATHER=your_openweathermap_api_key
-EXCHANGE_API_KEY=your_exchange_rate_api_key
-GROUP_CHAT_ID=your_group_chat_id
+**Создайте файл .env в корневом каталоге проекта с содержимым:**<br>
+TOKEN=your_telegram_bot_token<br>
+WEATHER=your_openweathermap_api_key<br>
+EXCHANGE_API_KEY=your_exchange_rate_api_key<br>
+GROUP_CHAT_ID=your_group_chat_id<br>
 
 Замените your_telegram_bot_token, your_openweathermap_api_key, your_exchange_rate_api_key, и your_group_chat_id на соответствующие значения.
 
-Запустите бота, выполнив команду:
+Запустите бота, выполнив команду:<br>
 python main.py
 
 ## **Использование**
